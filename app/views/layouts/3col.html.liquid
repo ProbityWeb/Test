@@ -1,0 +1,21 @@
+---
+metadata: 
+  name: "3col"
+  type: "page"
+physical_file_path: views/layouts/3col.html.liquid
+path: layouts/3col
+---
+<body>
+
+
+	{% include 'layout/head' %}
+
+
+  {% include 'layout/header' %}
+	<main>
+		{{ content_for_layout }}
+	</main>
+  {% include 'layout/footer' %}
+	{% include 'layout/scripts' %}
+
+</body>
