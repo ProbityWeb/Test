@@ -5,20 +5,20 @@ metadata:
 physical_file_path: views/layouts/3col.html.liquid
 path: layouts/3col
 ---
-&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
-	{% include &#39;layout/head&#39; %}
-&lt;/head&gt;
-&lt;body&gt;
-  {% include &#39;layout/header&#39; %}
-	&lt;main&gt;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	{% include 'layout/head' %}
+</head>
+<body>
+  {% include 'layout/header' %}
+	<main>
 		{{ content_for_layout }}
-	&lt;/main&gt;
-	&lt;aside&gt;
-	  &lt;h2&gt;a side menu&lt;/h2&gt;
-	&lt;/aside&gt;
-  {% include &#39;layout/footer&#39; %}
-	{% include &#39;layout/scripts&#39; %}
-&lt;/body&gt;
-&lt;/html&gt;
+	</main>
+	<aside>
+	  <h2>a side menu</h2>
+	</aside>
+  {% include 'layout/footer' %}
+	{% include 'layout/scripts' %}
+</body>
+</html>
