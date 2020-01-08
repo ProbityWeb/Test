@@ -1,0 +1,24 @@
+---
+slug: test
+layout_name: 1col
+metadata: 
+  name: "test"
+  type: "page"
+  meta_title: "Test"
+  meta_desc: "test"
+physical_file_path: modules/cms/public/views/pages/test.html.liquid
+---
+{% assign rate = '3.20' %}
+{% assign firstRate = rate | slice: 0,1 %}
+{% assign rateAve = rate | slice: -2,2 %}
+{% if rateAve >= '80' -%}
+{% assign starRate = '0' -%}
+{% elsif rateAve <= '70' and rateAve >= '30' -%}
+{% assign starRate = '5' -%}
+{% elsif rateAve <= '20' and rateAve >= '80' -%}
+{% assign starRate = '0' -%}
+{% endif %}
+
+<p>{{firstRate}}.{{starRate}}</p>
+
+<figure><img src='{{ 'images/blog/backlinks-report-link-spam.jpg' | asset_url }}'></figure>
