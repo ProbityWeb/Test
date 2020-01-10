@@ -1,0 +1,22 @@
+---
+metadata: 
+  name: "1col"
+  type: "page"
+physical_file_path: views/layouts/1col.html.liquid
+path: layouts/1col
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	{% include 'layout/head' %}
+</head>
+<body>
+  {% include 'layout/header' %}
+	<main>
+		{{ content_for_layout }}
+	</main>
+  {% include 'layout/footer' %}
+	{% include 'layout/scripts' %}
+</body>
+</html>
+
