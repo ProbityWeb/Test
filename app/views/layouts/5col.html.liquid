@@ -1,0 +1,21 @@
+---
+metadata: 
+  name: "6col"
+  type: "page"
+physical_file_path: views/layouts/5col.html.liquid
+path: layouts/6col
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	{% include 'layout/head' %}
+</head>
+<body>
+  {% include 'layout/header' %}
+	<main>
+		{{ content_for_layout }}
+	</main>
+  {% include 'layout/footer' %}
+	{% include 'layout/scripts' %}
+</body>
+</html>
