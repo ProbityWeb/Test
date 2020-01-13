@@ -22,5 +22,8 @@ physical_file_path: modules/cms/public/views/pages/test.html.liquid
 <p>{{firstRate}}.{{starRate}}</p>
 
 <figure class="center"><img src='{{ 'images/blog/banner-sweetmans.jpg' | asset_url }}'></figure>
+
+{{context.constants.company_info | parse_json | dig: 'primary_phone'}}
+
 {% include 'modules/areapages/area-search' %}
 {% include 'modules/blog/templates/section/latest-posts' %}
